@@ -1,0 +1,76 @@
+.logo > img 
+{
+    display: block;
+    margin: auto;
+}
+.logo
+{
+    background-color: beige;
+    margin:0 auto;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid darkgray;
+}
+
+    
+
+.line_1 > hr
+{
+    width: 100%;
+    height: 5px;
+    background-color: darkgrey;
+    border: none;  
+}
+.line_2 > hr
+{
+    width: 100%;
+    height: 5px;
+    background-color: darkgrey;
+    border: none;  
+}
+.line_3 > hr
+{
+    width: 100%;
+    height: 5px;
+    background-color: darkgrey;
+    border: none;  
+}
+
+.line_1 > img
+{
+    
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+.line_2 > img
+{
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.line_3 > img
+{
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+#name
+{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-right: 40px;
+    float: Right;
+}
+
+#price
+{
+    font-size: 40px;
+    margin-right: 40px;
+    float: Right;
+    margin-bottom: 10px;
+}
