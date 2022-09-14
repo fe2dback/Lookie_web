@@ -54,6 +54,29 @@
     width: 100%;
 }
 
+.ship 
+{
+    text-align: center; 
+    display: block;
+    margin: auto;   
+    padding-bottom: 100px;
+    
+
+}
+
+.ship > a
+{   
+    border: 2px solid black;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 15px;
+    
+    
+}
+
 .bottom_menu { 
     position: fixed; 
     bottom: 0px; 
