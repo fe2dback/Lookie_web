@@ -90,12 +90,13 @@
 #name
 {
     font-size: 20px;
-    position: absolute;
-    margin-left: 60%;
+    margin-left: 55%;
+    float: right;
 }
 
 #price
 {
+    margin-left: 100%;
     margin-top: 5%;
     font-size: 20px;
     float: right;
