@@ -44,7 +44,7 @@
 
 .line_start > hr
 {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 100%;
     height: 5px;
     background-color: darkgrey;
@@ -142,6 +142,36 @@
     width: 70px;
     float: left;
 
+}
+
+.line_start
+{
+    padding-bottom: 160px;
+}
+
+.line_1
+{
+    padding-bottom: 160px;
+}
+
+.line_2
+{
+    padding-bottom: 160px;
+}
+
+.line_3
+{
+    padding-bottom: 160px;
+}
+
+.line_4
+{
+    padding-bottom: 160px;
+}
+
+.line_end
+{
+    padding-bottom: 160px;
 }
 
 #name
