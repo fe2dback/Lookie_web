@@ -106,3 +106,10 @@
 {
     visibility: hidden;
 }
+
+.product > button
+{
+    font-size: 35px;
+    border-radius: 15px;
+    background-color: white;
+}
