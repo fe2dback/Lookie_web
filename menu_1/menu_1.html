@@ -10,7 +10,13 @@
 </head>
 
 <body>
-
+    <div class="toolbar" style="visibility: hidden;">
+        <h1 class="brand"></h1>
+        <p>
+                <span id="count"></span>
+                <span id="sum"></span>
+        </p>
+    </div>
     <div class="logo" style="text-align:center">
         <img src="../file/logo_wid.png">
     </div>
@@ -23,12 +29,6 @@
     </div>
     <div class="wish">
         <p>메뉴 찜하기</p>
-    </div>
-    <div class="product">
-        <p>민수가 콜드브루로
-            <br>
-            내린 아메리카노
-        </p>
     </div>
 
     <div class="nav">
@@ -45,32 +45,20 @@
         </div>
     </div>
 
-    <div class="toolbar">
-        <h1 class="brand">Shop</h1>
-        <p>
-            <a href="cart.html">
-                Cart items:
-                <span id="count">0</span>, Price:
-                <span id="sum">0</span>
-            </a>
-        </p>
-    </div>
+    
+    
 
     <div class="products">
         <div class="product">
-            <h3>시발시발</h3>
-            <p>Price: 20000</p>
-            <button data-id="1" data-price="20000" data-title="시발">Add to cart</button>
+            <p>민수가 콜드브루로
+                <br>
+                내린 아메리카노
+            </p>
+            <button data-id="1" data-price="7000" data-title="menu_1">Add to cart</button>
         </div>
     </div>
 
     <script src="../js/app.js"></script>
-
-    <center>
-        <button type="button" style="color: black; background:white; font-size:2em; 
-        border-radius:0.5em; padding:5px 20px; margin-bottom: 100px;">장바구니에 담기</button>
-    </center>
-
     
 </body>
 
