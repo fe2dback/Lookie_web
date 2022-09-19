@@ -42,6 +42,14 @@
 }
 
 
+.line_start > img
+{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+    float: left;
+}
 .line_start > hr
 {
     margin-top: 30px;
@@ -51,8 +59,21 @@
     border: none;  
     
 }
+.line_start
+{
+    padding-bottom: 160px;
+}
 
-.line_1 > hr
+
+.line > img
+{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+    float: left;
+}
+.line > hr
 {
     width: 100%;
     height: 5px;
@@ -60,80 +81,12 @@
     border: none;  
     
 }
-.line_2 > hr
+.line
 {
-    width: 100%;
-    height: 5px;
-    background-color: darkgrey;
-    border: none;  
-}
-.line_3 > hr
-{
-    width: 100%;
-    height: 5px;
-    background-color: darkgrey;
-    border: none;  
-}
-.line_4 > hr
-{
-    width: 100%;
-    height: 5px;
-    background-color: darkgrey;
-    border: none;  
-}
-.line_end > hr
-{
-    
-    width: 100%;
-    height: 5px;
-    background-color: darkgrey;
-    border: none; 
+    padding-bottom: 160px;
 }
 
-/**************************************/
 
-.line_start > img
-{
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 50px;
-    float: left;
-}
-
-.line_1 > img
-{
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 50px;
-    float: left;
-}
-
-.line_2 > img
-{
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 50px;
-    float: left;
-}
-.line_3 > img
-{
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 50px;
-    float: left;
-}
-.line_4 > img
-{
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 50px;
-    float: left;
-}
 .line_end > img
 {
     margin-left: 20px;
@@ -143,36 +96,19 @@
     float: left;
 
 }
-
-.line_start
+.line_end > hr
 {
-    padding-bottom: 160px;
+    
+    width: 100%;
+    height: 5px;
+    background-color: darkgrey;
+    border: none; 
 }
-
-.line_1
-{
-    padding-bottom: 160px;
-}
-
-.line_2
-{
-    padding-bottom: 160px;
-}
-
-.line_3
-{
-    padding-bottom: 160px;
-}
-
-.line_4
-{
-    padding-bottom: 160px;
-}
-
 .line_end
 {
     padding-bottom: 160px;
 }
+
 
 #name
 {
