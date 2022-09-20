@@ -7,16 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 
 <body>
-    <div class="toolbar" style="visibility: hidden;">
-        <h1 class="brand"></h1>
-        <p>
-                <span id="count"></span>
-                <span id="sum"></span>
-        </p>
-    </div>
+    
     <div class="logo" style="text-align:center">
         <img src="../file/logo_wid.png">
     </div>
@@ -45,21 +40,46 @@
 		</div>
 	</div>
 
-    
-    
+    <div class="container">
 
-    <div class="products">
-        <div class="product">
-            <p>민수가 콜드브루로
-                <br>
-                내린 아메리카노
-            </p>
-            <button data-id="1" data-price="3500" data-title="아메리카노">장바구니에 담기</button>
-        </div>
-    </div>
+		<div class="card-deck mt-4 mb-4 text-center">
+			<div class="card mb-4 shadow-sm">
+					<button type="button" class="btn btn-block btn-outline-primary"
+						onClick="cartLS.add({id: 1, name: '아메리카노', price: 3500})">장바구니 추가</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <script src="../js/app.js"></script>
+    <script>
+		function renderCart(items) {
+			const $cart = document.querySelector(".cart")
+			const $total = document.querySelector(".total")
+
+			$cart.innerHTML = items.map((item) => `
+					<tr>
+						<td>#${item.id}</td>
+						<td>${item.name}</td>
+						<td>${item.quantity}</td>
+						<td style="width: 60px;">	
+							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
+								onClick="cartLS.quantity(${item.id},1)">+</button>
+						</td>
+						<td style="width: 60px;">	
+							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
+								onClick="cartLS.quantity(${item.id},-1)">-</button>
+						</td>
+						<td class="text-right">$${item.price}</td>
+						<td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button></td>
+					</tr>`).join("")
+
+			$total.innerHTML = "$" + cartLS.total()
+		}
+		renderCart(cartLS.list())
+		cartLS.onChange(renderCart)
+	</script>
     
+    <script src="../dist/cart-localstorage.min.js"></script>
 </body>
 
 </html>
