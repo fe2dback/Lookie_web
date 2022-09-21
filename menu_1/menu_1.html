@@ -25,7 +25,7 @@
     <div class="wish">
         <p>메뉴 찜하기</p>
     </div>
-
+	
     
     
 
@@ -33,7 +33,7 @@
 		function renderCart(items) {
 			const $cart = document.querySelector(".cart")
 			const $total = document.querySelector(".total")
-
+			
 			$cart.innerHTML = items.map((item) => `
 					<tr>
 						<td>#${item.id}</td>
