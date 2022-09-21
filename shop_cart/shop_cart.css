@@ -78,3 +78,7 @@ hr{
     margin-left: -35px;
     border-radius: 10px;
 }
+br
+{
+    visibility: hidden;
+}
