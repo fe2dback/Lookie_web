@@ -47,8 +47,7 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: 20%;
-    z-index: 0;
+    bottom: 15%;
 }
 
 
@@ -56,8 +55,8 @@ table{
     margin-top: 150px;
     width: 90%;
     height: 150px;
-    margin-left: 10vw
-    
+    margin-left: 10vw;
+    margin-bottom: 250px;
 }
 
 
