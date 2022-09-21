@@ -113,3 +113,19 @@
     border-radius: 15px;
     background-color: white;
 }
+
+
+.card
+{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.btn 
+{
+    border-radius:25px;
+	font-size: 25px;
+}
+

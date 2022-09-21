@@ -47,21 +47,15 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 550px;
+    bottom: 100px;
 }
 
 
 table{
     margin-top: 150px;
-    width: 400px;
+    width: 600px;
     height: 150px;
+    margin-left: 10vw
 }
-
-#tbody
-{
-    text-align: center;
-}
-
-
 
 

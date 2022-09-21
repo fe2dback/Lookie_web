@@ -27,10 +27,6 @@
 					</tbody>
 					<tfoot>
 						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
 						<td class="text-right">Total: <strong class="total"></strong></td>
 						<td></td>
 					</tfoot>
@@ -47,18 +43,24 @@
 					<tr>
 						<td>${item.name}</td>
 						<td>${item.quantity}개</td>
-						<td style="width: 60px;">	
+						<tr></tr>
+						<td class="text-right">${item.price}원</td>
+						<tr></tr>
+					</tr>
+					<tr>
+						<td>	
 							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
 								onClick="cartLS.quantity(${item.id},1)">+</button>
-						</td>
-						<td style="width: 60px;">	
-							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
+								<button type="button" class="btn btn-block btn-sm btn-outline-primary"
 								onClick="cartLS.quantity(${item.id},-1)">-</button>
 						</td>
-						<td class="text-right">${item.price}원</td>
+						
 						<td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">장바구니 제외</Button></td>
-					</tr>`).join("")
-
+						
+					</tr>`
+					
+					).join("")
+				
 			$total.innerHTML = cartLS.total() + "원"
 		}
 		renderCart(cartLS.list())
