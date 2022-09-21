@@ -52,11 +52,25 @@
 
 
 table{
-    margin-top: 150px;
+    margin-top: 200px;
     width: 90%;
     height: 150px;
     margin-left: 10vw;
     margin-bottom: 250px;
+    
 }
 
+button
+{
+    border: 0px;
+    background-color: white;
+}
 
+.order{
+    border: solid 2px black;
+}
+
+hr{
+    height: 2px;
+    background: darkgray;   
+}

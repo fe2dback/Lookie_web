@@ -26,7 +26,7 @@
 					</tbody>
 					<tfoot style="float:right;">
 						<td></td>
-						<td class="text-right">Total: <strong class="total"></strong></td>
+						<td class="text-right">합계 금액: <strong class="total"></strong></td>
 						<td></td>
 					</tfoot>
 				</table>
@@ -44,18 +44,19 @@
 						<td>${item.quantity}개</td>
 						<tr></tr>
 						<td class="text-right">${item.price}원</td>
-						<tr></tr>
+						<tr><br></tr>
 					</tr>
 					<tr>
 						<td>	
 							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
-								onClick="cartLS.quantity(${item.id},1)">+</button>
+								onClick="cartLS.quantity(${item.id},1)">추가하기</button>
+								|
 								<button type="button" class="btn btn-block btn-sm btn-outline-primary"
-								onClick="cartLS.quantity(${item.id},-1)">-</button>
+								onClick="cartLS.quantity(${item.id},-1)">빼기</button>
 						</td>
 						
 						<td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">장바구니 제외</Button></td>
-						
+					<tr><br><br><hr></tr>
 					</tr>`
 					
 					).join("")
@@ -82,7 +83,7 @@
 	</div>
     <div class="button">
         <center>
-            <button type="button" style="color: black; background:white; font-size:2em; 
+            <button class="order" type="button" style="color: black; background:white; font-size:2em; 
             border-radius:0.5em; padding:5px 20px;">주문하기</button>
         </center>
     </div>
