@@ -40,16 +40,7 @@
 		</div>
 	</div>
 
-    <div class="container">
-
-		<div class="card-deck mt-4 mb-4 text-center">
-			<div class="card mb-4 shadow-sm">
-					<button type="button"  class="btn btn-block btn-outline-primary"
-						onClick="alert('장바구니에 추가되었습니다.'); cartLS.add({id: 1, name: '아메리카노', price: 3500})">장바구니 추가</button>
-				</div>
-			</div>
-		</div>
-	</div>
+    
 
     <script>
 		function renderCart(items) {
@@ -78,7 +69,16 @@
 		renderCart(cartLS.list())
 		cartLS.onChange(renderCart)
 	</script>
-    
+    <div class="container">
+
+		<div class="card-deck mt-4 mb-4 text-center">
+			<div class="card mb-4 shadow-sm">
+					<button type="button"  class="btn btn-block btn-outline-primary"
+						onClick="alert('장바구니에 추가되었습니다.'); cartLS.add({id: 1, name: '아메리카노', price: 3500})">장바구니 추가</button>
+				</div>
+			</div>
+		</div>
+	</div>
     <script src="../dist/cart-localstorage.min.js"></script>
 </body>
 
