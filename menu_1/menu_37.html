@@ -2,56 +2,44 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="menu.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="menu.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
 </head>
 
 <body>
-    
-    <div class="logo" style="text-align:center">
-        <img src="../file/logo_wid.png">
-    </div>
 
-    <div class="menu">
-        <p>오레오 바스크 치즈케이크</p>
-        <!--<p>(아이스)</p>-->
-        <br>
-        <p>5,300 ￦(원)</p>
-    </div>
-    <div class="wish">
-        <p>메뉴 찜하기</p>
-    </div>
-
-    <div class="nav">
-    </div>
-    <div class="bottom_menu">
-		<div>
-			<img src="../img/food.png" width="40px" onclick="location.href='../shop/shoppage.html';">
-		</div>
-		<div>
-			<img src="../img/cart.png" width="40px" onclick="location.href='../shop_cart/shop_cart.html';">
-		</div>
-		<div>
-			<img src="../img/profile.png" width="40px">
-		</div>
+	<div class="logo" style="text-align:center">
+		<img src="../img/Logo.png" alt="메뉴닷">
 	</div>
 
-    <div class="container">
+	<div class="menu">
+		<p>오레오 바스크 치즈케이크</p>
+		<!--<p>(아이스)</p>-->
+		<br>
+		<p>5,300 ￦(원)</p>
+	</div>
+	<div class="wish">
+		<p>메뉴 찜하기</p>
+	</div>
+
+
+	<div class="container">
 
 		<div class="card-deck mt-4 mb-4 text-center">
 			<div class="card mb-4 shadow-sm">
-					<button type="button" class="btn btn-block btn-outline-primary"
-						onClick="cartLS.add({id: 37, name: '오레오 바스크 치즈케이크', price: 5300})">장바구니 추가</button>
-				</div>
+				<button type="button" class="btn btn-block btn-outline-primary"
+					onClick="alert('장바구니에 추가되었습니다.'); cartLS.add({id: 37, name: '오레오 바스크 치즈케이크', price: 5300})">장바구니
+					추가</button>
 			</div>
 		</div>
 	</div>
+	</div>
 
-    <script>
+	<script>
 		function renderCart(items) {
 			const $cart = document.querySelector(".cart")
 			const $total = document.querySelector(".total")
@@ -78,21 +66,33 @@
 		renderCart(cartLS.list())
 		cartLS.onChange(renderCart)
 	</script>
-    
-    <script src="../dist/cart-localstorage.min.js"></script>
-    
 
-    <div class="products">
-        <div class="product">
-            <p>민수가 콜드브루로
-                <br>
-                내린 아메리카노
-            </p>
-        </div>
-    </div>
+	<script src="../dist/cart-localstorage.min.js"></script>
 
-    
-    
+
+	<div class="products">
+		<div class="product">
+			<p>민수가 콜드브루로
+				<br>
+				내린 아메리카노
+			</p>
+		</div>
+	</div>
+
+	<div class="nav">
+	</div>
+	<div class="bottom_menu">
+		<div>
+			<img src="../img/on_food.png" alt="음식카테고리" width="40px" onclick="location.href='../index.html';">
+		</div>
+		<div>
+			<img src="../img/cart.png" alt="장바구니" width="40px" onclick="location.href='../shop_cart/shop_cart.html';">
+		</div>
+		<div>
+			<img src="../img/profile.png" alt="프로필" width="40px" onclick="location.href='../profile/profile.html';">
+		</div>
+	</div>
+
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     top: 0;
     position: fixed; 
     width: 100%;
-    height: 150px; 
+    height: 100px; 
     z-index:100; 
     background-color: white;
     border-bottom: 3px solid black;
@@ -17,7 +17,9 @@
     text-align: center; 
     display: block;
     margin: auto;
-    width: 300px;
+    width: 200px;
+    margin-top: -40px;
+   
 }
 
 
@@ -43,20 +45,20 @@
 
 .button
 {
-    position: fixed;
+    display: block;
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: 15%;
+    margin-bottom: 30%;
 }
 
 
 table{
-    margin-top: 200px;
+    margin-top: 130px;
     width: 90%;
     height: 150px;
     margin-left: 10vw;
-    margin-bottom: 250px;
+    margin-bottom: 50px;
 
     
 }
@@ -82,3 +84,4 @@ br
 {
     visibility: hidden;
 }
+
