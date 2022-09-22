@@ -20,8 +20,6 @@
     display: block;
     margin: auto;
     width: 200px;
-    margin-top: -40px;
-   
 }
   
 
@@ -45,7 +43,7 @@
 }
 .line_start
 {
-    padding-bottom: 160px;
+    padding-bottom: 30px;
 }
 
 
@@ -67,7 +65,7 @@
 }
 .line
 {
-    padding-bottom: 160px;
+    padding-bottom: 30px;
 }
 
 
@@ -89,7 +87,7 @@
 }
 .line_end
 {
-    padding-bottom: 160px;
+    padding-bottom: 30px;
 }
 
 /*********************************/
