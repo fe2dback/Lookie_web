@@ -63,6 +63,13 @@
     padding-bottom: 160px;
 }
 
+.line_start > a
+{
+    float: right;
+    clear: right;
+}
+
+
 .line > img
 {
     margin-left: 20px;
@@ -83,6 +90,13 @@
 {
     padding-bottom: 160px;
 }
+
+.line > a
+{
+    float: right;
+    clear: right;
+}
+
 
 
 .line_end > img
@@ -113,15 +127,15 @@
     font-size: 20px;
     margin-right: 5px;
     margin-top: 20px;
+    margin-bottom: 60px;
     float: right;
 }
 
 #price
 {
-    margin-left: 100%;
-    margin-top: 5%;
-    font-size: 20px;
-    float: right;
+    text-align: right;
+    margin-top: 5px;
+    font-size: 15px;
 }
 
 
