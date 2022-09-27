@@ -42,6 +42,11 @@
    
 }
 
+td{
+    width: 55%;
+    
+}
+
 .button
 {
     display: block;
@@ -56,10 +61,8 @@ table{
     margin-top: 130px;
     width: 90%;
     height: 150px;
-    margin-left: 10vw;
+    margin-left: 10%;
     margin-bottom: 50px;
-
-    
 }
 
 button
@@ -74,9 +77,9 @@ button
 
 hr{
     background-color: darkgray;
-    height: 2px;
-    margin-right: -130px;
-    margin-left: -35px;
+    height: 1px;
+    margin-right: -80%;
+    margin-left: -20%;
     border-radius: 10px;
 }
 br
@@ -84,3 +87,6 @@ br
     visibility: hidden;
 }
 
+.text-right{
+    text-align: center;
+}

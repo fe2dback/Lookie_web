@@ -44,21 +44,23 @@
 			$cart.innerHTML = items.map((item) => `
 					<tr>
 						<td>${item.name}</td>
-						<td>${item.quantity}개</td>
-						<tr></tr>
-						<td class="text-right">${item.price}원</td>
+						<td class="text-right">${item.quantity}개</td>
+					<tr>
+					</tr>
+						<br>
+						<td>${item.price}원</td>
 						<tr><br></tr>
 					</tr>
 					<tr>
 						<td>	
 							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
-								onClick="alert('총수량 ${item.quantity+1} 개'); cartLS.quantity(${item.id},1)">추가하기</button>
+								onClick="alert('${item.name} 총수량 ${item.quantity+1} 개'); cartLS.quantity(${item.id},1)">추가하기</button>
 								|
 						    <button type="button" class="btn btn-block btn-sm btn-outline-primary"
-								onClick="alert('총수량 ${item.quantity-1} 개'); cartLS.quantity(${item.id},-1)">빼기</button>
+								onClick="alert('${item.name} 총수량 ${item.quantity-1} 개'); cartLS.quantity(${item.id},-1)">빼기</button>
 						</td>
 						
-						<td class="text-right"><Button class="btn btn-primary" onClick="alert('장바구니에서 삭제되었습니다.');cartLS.remove(${item.id})">장바구니 제외</Button></td>
+						<td><Button class="btn btn-primary" onClick="alert('장바구니에서 삭제되었습니다.');cartLS.remove(${item.id})">장바구니 제외</Button></td>
 					<tr><br><hr><br></tr>
 					</tr>`
 					
