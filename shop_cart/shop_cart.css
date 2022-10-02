@@ -52,7 +52,6 @@
 
 td{
     width: 55%;
-    
 }
 
 .button
@@ -98,3 +97,11 @@ br
 .text-right{
     text-align: center;
 }
+
+
+.total
+{   
+    padding-left: 100px;
+}
+
+

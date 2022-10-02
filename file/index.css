@@ -60,7 +60,7 @@
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 50px;
+    width: 30px;
     float: left;
 }
 .line > hr
@@ -73,7 +73,13 @@
 }
 .line
 {
-    padding-top: 10px;
+    border: solid 2px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-style: outset;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -102,10 +108,17 @@
 #name
 {
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
+    padding-left: 30px;
     display: flex;
-    text-align: center;
-    justify-content : center;
+}
+
+#cate
+{
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 30px;
+    display: flex;
 }
 
 #price
