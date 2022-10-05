@@ -133,7 +133,7 @@
 .line
 {
     border: solid 2px;
-    padding-bottom: 90px;
+    padding-bottom: 10px;
     border-radius: 10px;
     border-style: outset;
     margin-left: 10px;
@@ -176,6 +176,15 @@
     float: right;
 }
 
+#price
+{
+    margin-right: 10px;
+    text-align: right;
+    margin-top: 5px;
+    font-size: 15px;
+    float: right;
+}
+
 #cate
 {
     font-size: 15px;
@@ -184,13 +193,7 @@
     display: flex;
 }
 
-#price
-{
-    margin-right: 10px;
-    text-align: right;
-    margin-top: 5px;
-    font-size: 15px;
-}
+
 
 
 .bottom_menu { 
@@ -211,4 +214,10 @@
     text-align: center; 
     padding-top: 20px; 
    
+}
+
+.blank
+{
+    padding-top: 10%;
+    visibility: hidden;
 }
