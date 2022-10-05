@@ -133,11 +133,12 @@
 .line
 {
     border: solid 2px;
-    padding-bottom: 10px;
+    padding-bottom: 90px;
     border-radius: 10px;
     border-style: outset;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: right;
 }
 
 .line > a
@@ -171,7 +172,7 @@
 {
     font-size: 20px;
     margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
     float: right;
 }
