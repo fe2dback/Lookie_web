@@ -11,9 +11,7 @@
     <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="logo" style="text-align:center">
-        <img src="./img/Logo.png" alt="메뉴닷">
-    </div>
+	<div class="back"><a onclick="history.go(-1)"><img src="./img/back.png" alt="뒤로가기 이미지" width="30px"></a></div>    
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
 	</div>
 	<div class="container">
@@ -103,17 +101,17 @@
             border-radius:0.5em; padding:5px 20px;" onClick="alert('아직 미완성된 기능입니다.')">주문하기</button>
         </center>
     </div>
-    <div class="nav">
+	<div class="nav">
 	</div>
 	<div class="bottom_menu">
-		<div>
-			<img src="./img/food.png" alt="음식카테고리" width="40px" onclick="location.href='./index.html';">
+		<div id="navimg">
+			<img src="./img/Shop.png" alt="음식카테고리" onclick="location.href='./index.html';">
 		</div>
-		<div>
-			<img src="./img/on_cart.png" alt="장바구니" width="40px" onclick="location.href='./shop_cart.html';">
+		<div id="navimg">
+			<img src="./img/OnCart.png" alt="장바구니" onclick="location.href='./shop_cart.html';">
 		</div>
-		<div>
-			<img src="./img/profile.png" alt="프로필" width="40px" onclick="location.href='./profile.html';">
+		<div id="navimg">
+			<img src="./img/Favorit.png" alt="프로필" onclick="location.href='./profile.html';">
 		</div>
 	</div>
 </body>
