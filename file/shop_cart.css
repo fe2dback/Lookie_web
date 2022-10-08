@@ -22,8 +22,8 @@
 }
 .back
 {
-    margin-left: 7%;
-    margin-top: 7%;
+    margin-left: 3%;
+    margin-top: 6%;
 }
 
 
@@ -81,10 +81,10 @@ button
 
 hr{
     background-color: darkgray;
-    height: 1px;
-    margin-right: -80%;
+    height: 2px;
+    margin-right: -70%;
     margin-left: -20%;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 br
 {
@@ -106,3 +106,7 @@ br
     width: 70px;
 }
 
+.sort
+{
+
+}
