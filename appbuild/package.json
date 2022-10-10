@@ -9,6 +9,8 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "airbridge-expo-config": "^1.0.0",
+    "airbridge-react-native-sdk": "^1.4.9",
     "expo": "~46.0.9",
     "expo-status-bar": "~1.4.0",
     "expo-updates": "~0.14.6",

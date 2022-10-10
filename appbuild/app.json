@@ -31,7 +31,8 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.public.MenuDot",
-      "versionCode": 1 
-    }
+      "versionCode": 1, 
+      "permissions" : []
+    } 
   }
 }
