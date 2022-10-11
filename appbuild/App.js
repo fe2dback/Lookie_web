@@ -40,4 +40,6 @@ class MyWebComponent extends Component {
   }
 }
 
+
+
 export default MyWebComponent
