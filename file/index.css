@@ -20,7 +20,7 @@ body{
     display: inline;
     margin: 0;
     padding: 0;
-    background-color: red;
+    background-color: #F5F5F5;
 }
 
 .logo > img 
@@ -39,8 +39,8 @@ body{
 
 .back
 {
-    margin-left: 3%;
-    margin-top: 6%;
+    left: 20px;
+    top: 20px;
     position: absolute;
     z-index: 2;
 }
@@ -63,7 +63,7 @@ body{
 
 .menu_start_line
 {
-    padding-top: 40px;
+    padding-top: 80px;
 }
 
 .menu_line
@@ -185,14 +185,12 @@ body{
 
 .text_1
 {    
-    margin-top: 60vw;
+    margin-top: 45vw;
     padding-bottom: 40px;
     background-color: white;
     width: 100%;
     height: 100px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px; 
 }
 
 
@@ -202,6 +200,7 @@ body{
 .text_1 > p
 {
     margin-top: 5px;
+    margin-left: 10px;
 }
 
 .text_2
@@ -375,7 +374,7 @@ body{
 .bottom_menu > div 
 { 
     float: left; 
-    width: 33%; 
+    width: 50%; 
     height: 100%; 
     text-align: center; 
     padding-top: 20px; 
@@ -396,13 +395,15 @@ body{
     text-align: center; 
     display: block;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .wish
 {
     margin-right: 20px;
     float: right;
+    visibility: hidden;
+    display: none;
 }
 
 .product
@@ -424,7 +425,7 @@ body{
     margin-bottom: 100px;
     width: 100%;
 }
-
+c
 .ship 
 {
     text-align: center; 
@@ -446,26 +447,6 @@ body{
     border-radius: 15px;
     
     
-}
-
-.bottom_menu { 
-    position: fixed; 
-    bottom: 0px; 
-    left: 0px; 
-    width: 100%; 
-    height: 80px; 
-    z-index:100; 
-    border-top: 3px solid black; 
-    background-color: white ;
-}
-.bottom_menu > div  
-{ 
-    float: left; 
-    width: 33%; 
-    height: 100%; 
-    text-align: center; 
-    padding-top: 20px; 
-   
 }
 
 .line_end > br
@@ -490,8 +471,13 @@ body{
 
 .btn 
 {
-    border-radius:25px;
+    border-radius: 15px;
+    border-style: hidden;
 	font-size: 25px;
+    padding: 10px;
+    width: 300px;
+    background-color: #297E0B;
+    color: white;
 }
 
 .container
