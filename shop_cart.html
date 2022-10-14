@@ -20,8 +20,7 @@
 			<div class="card-body">
 				<table class="table">
 					
-					<tbody class="cart">
-						
+				<tbody class="cart">
 					</tbody>
 					
 					<td><strong class="total"></strong></td>
@@ -29,6 +28,7 @@
 				</table>
 			</div>
 		</div>
+		
 	</div>
 
 	
@@ -42,11 +42,13 @@
 						<td>${item.name}</td>
 						<td class="text-right">${item.quantity}개</td>
 					<tr>
+
 					</tr>
 						<br>
 						<td>${item.price}원</td>
-						<tr><br></tr>
+						<br>
 					</tr>
+
 					<tr>
 						<td>	
 							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
@@ -56,10 +58,13 @@
 								onClick="alert('${item.name} 총수량 ${item.quantity-1} 개'); cartLS.quantity(${item.id},-1)">빼기</button>
 						</td>
 						
-						<td><Button class="btn btn-primary" onClick="alert('장바구니에서 삭제되었습니다.');cartLS.remove(${item.id})">장바구니 제외</Button></td>
-					<tr><br><hr id="sort"><br></tr>
-					</tr>`
-					
+						<td>
+							<Button class="btn btn-primary" onClick="alert('장바구니에서 삭제되었습니다.');cartLS.remove(${item.id})">장바구니 제외</Button>
+						</td>
+
+					</tr>
+					<tr><td colspan="3"><br><hr id="sort"><br><td></tr>
+					`
 					).join("")
 				
 			$total.innerHTML = cartLS.total() + "원"
@@ -97,8 +102,10 @@
     
     <div class="order_button">
         <center>
-            <button class="order" id="button" type="button" style="color: black; background:white; font-size:2em; 
-            border-radius:0.5em; padding:5px 20px;" onClick="alert('아직 미완성된 기능입니다.')">주문하기</button>
+            <button class="order" id="button" type="button" style="
+			color: white; background:#297E0B; font-size:2em; 
+            border-radius:0.5em; padding:5px 20px; width: 300px; " onClick="alert('아직 미완성된 기능입니다.')
+			">주문하기</button>
         </center>
     </div>
 	<div class="nav">

@@ -12,7 +12,6 @@ a:hover { color: black; text-decoration: none; -webkit-text-stroke: 0.5px black;
     height: 10%; 
     z-index:100; 
     background-color: white;
-    border-bottom: 3px solid gray;
 
 }
 
@@ -75,7 +74,7 @@ body{
     border-style: outset;
     margin-left: 10px;
     margin-right: 10px;
-    background: linear-gradient(to left, #6A6A6A15 75%, #ffffff 30%);
+    background: white;
 }
 
 
@@ -131,6 +130,7 @@ body{
     border-style: outset;
     margin-left: 10px;
     margin-right: 10px;
+    background-color: white;
 }
 
 
@@ -162,6 +162,7 @@ body{
 }
 
 
+
 /*********************************/
 #name
 {
@@ -180,17 +181,21 @@ body{
     display: flex;
 }
 
+#cate_name
+{
+    color: #297E0B;
+}
 
 
 
 .text_1
 {    
     margin-top: 45vw;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     background-color: white;
     width: 100%;
     height: 100px;
-    margin-bottom: 30px; 
+    margin-bottom: 40px; 
 }
 
 
@@ -199,7 +204,8 @@ body{
 
 .text_1 > p
 {
-    margin-top: 5px;
+    padding-top: 10px;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
@@ -210,10 +216,6 @@ body{
     margin: auto;
     margin-top: 40%;
     background-color: white;
-    width: 85%;
-    height: 20%;
-    border-radius: 20px;
-    border: 2px solid darkgray;
     text-align: left;
     margin-bottom: 10%;
     margin-bottom: 50px;
@@ -222,12 +224,10 @@ body{
 
 .text_2 > p
 {
-    
     font-size: 15px;
     margin-top: 5px;
     margin-left: 15px;
     margin-right: 15px;
-    
 }
 
 
@@ -341,12 +341,15 @@ body{
     border-style: outset;
     margin-left: 10px;
     margin-right: 10px;
+    background-color: white;
+    border-color:#F5F5F5;
 }
 
 .cate_line > p{
     margin-bottom: 10px;
     text-align: right;
     margin-right: 40px;
+    
 }
 
 
@@ -368,7 +371,7 @@ body{
     width: 100%; 
     height: 80px; 
     z-index:100; 
-    border-top: 3px solid black; 
+    border-top: 2px outset #F5F5F5;
     background-color: white ;
 }
 .bottom_menu > div 
@@ -425,7 +428,7 @@ body{
     margin-bottom: 100px;
     width: 100%;
 }
-c
+
 .ship 
 {
     text-align: center; 

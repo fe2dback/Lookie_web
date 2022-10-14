@@ -10,8 +10,12 @@
     background-color: white;
     border-bottom: 3px solid gray;
 }
-
-
+body
+{
+    display:inline;
+    margin: 0;
+    padding: 0;
+}
 .logo > img 
 { 
     text-align: center; 
@@ -22,8 +26,8 @@
 }
 .back
 {
-    margin-left: 3%;
-    margin-top: 6%;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 
@@ -60,36 +64,31 @@ td{
     margin-bottom: 30%;
 }
 
+body
+{
+    background-color: #F5F5F5;
+}
 
 table{
     margin-top: 40px;
-    width: 90%;
-    height: 150px;
-    margin-left: 10%;
+    width: 100%;
     margin-bottom: 50px;
+    clear: left;
 }
+
+
 
 button
 {
     border: 0px;
-    background-color: white;
+    background-color: #F5F5F5;
 }
 
 .order{
-    border: solid 2px black;
+    border: solid 2px white;
 }
 
-hr{
-    background-color: darkgray;
-    height: 2px;
-    margin-right: -70%;
-    margin-left: -20%;
-    border-radius: 25px;
-}
-br
-{
-    visibility: hidden;
-}
+
 
 .text-right{
     text-align: center;
@@ -98,7 +97,7 @@ br
 
 .total
 {   
-    clear: left;
+    float: right;
 }
 
 #navimg > img
@@ -106,7 +105,7 @@ br
     width: 70px;
 }
 
-.sort
+#sort
 {
-
+    width: 100%;
 }
