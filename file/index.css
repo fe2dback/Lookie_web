@@ -41,7 +41,7 @@ body{
 .back
 {
     left: 20px;
-    top: 40px;
+    top: 60px;
     position: absolute;
     z-index: 2;
 }
@@ -59,12 +59,12 @@ body{
 
 .line_start
 {
-    padding-bottom: 90px;
+    padding-bottom: 120px;
 }
 
 .menu_start_line
 {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .menu_line
