@@ -41,30 +41,32 @@
 			$cart.innerHTML = items.map((item) => `
 					<tr>
 						<td><p id="tab"></p>${item.name}</td>
-						<td class="text-right">${item.quantity}개<p id="tab_r"></p></td>
-					<tr>
-
-					</tr>
-						<br>
-						<td><p id="tab"></p>${item.price}원</td>
-						<br>
-					</tr>
-
-					<tr>
-						
-						<td>	
-							<p id="tab"></p>
-							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
-								onClick="alert('${item.name} 총수량 ${item.quantity+1} 개'); cartLS.quantity(${item.id},1)">추가하기</button>
-								|
-						    <button type="button" class="btn btn-block btn-sm btn-outline-primary"
-								onClick="alert('${item.name} 총수량 ${item.quantity-1} 개'); cartLS.quantity(${item.id},-1)">빼기</button>
-						</td>
-						
 						<td  class="text-right">
-							<Button class="btn btn-primary" onClick="alert('장바구니에서 삭제되었습니다.');cartLS.remove(${item.id})">장바구니 제외</Button>
+							<Button class="btn btn-primary" onClick="alert('장바구니에서 삭제되었습니다.');cartLS.remove(${item.id})"><img src="./img/del.png" width="20x" style="margin-bottom:10px;"></Button>
 							<p id="tab_r"></p>
 							</td>
+					<tr>
+
+					</tr>
+						<br>
+						<td>${item.price}원<p id="tab"></p></td>
+						
+						<td class="text-right"> 	
+					
+						    <button type="button" class="btn btn-block btn-sm btn-outline-primary"
+								onClick="alert('${item.name} 총수량 ${item.quantity-1} 개'); cartLS.quantity(${item.id},-1)"><img src="./img/minus.png" style="margin-bottom:5px;"></button>
+								${item.quantity}개
+								
+							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
+								onClick="alert('${item.name} 총수량 ${item.quantity+1} 개'); cartLS.quantity(${item.id},1)"><img src="./img/plus.png"></button>
+								
+								<p id="tab_r"></p>
+							</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						
 					</tr>
 					
 					<tr><td colspan="3"><br><hr id="sort"><br><td></tr>

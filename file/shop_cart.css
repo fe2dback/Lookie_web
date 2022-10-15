@@ -80,7 +80,12 @@ button
 {
     border: 0px;
     background-color: #F5F5F5;
-    
+    font-size: 30px;
+}
+
+button > p
+{
+    font-size: 10px;
 }
 
 .order{
@@ -116,7 +121,7 @@ button
 #tab_r
 {
     float: right;
-    margin-right: 15vw;
+    margin-right: 5vw;
     visibility: hidden;
 }
 
