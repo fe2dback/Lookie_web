@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../file/index.css">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,12 +13,14 @@
 <body>
 	<div class="back"><a onclick="history.go(-1)"><img src="../../img/back.png" alt="뒤로가기 링크"></a></div>
     <div class="menu">
-        <p>라임모히또</p>
+        <p>오리지널 핫번</p>
         <!--<p>(아이스)</p>-->
         <br>
-        <p>3,800 ￦(원)</p>
+        <p>1,900 ￦(원)</p>
     </div>
-
+    <div class="wish">
+        <p>메뉴 정하기</p>
+    </div>
 	
     
     
@@ -33,7 +34,7 @@
 					<tr>
 						<td>#${item.id}</td>
 						<td>${item.name}</td>
-						<td>${item.quantity}</td>
+						<td>${item.quantity}</td> 
 						<td style="width: 60px;">	
 							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
 								onClick="cartLS.quantity(${item.id},1)">+</button>
@@ -56,7 +57,7 @@
 		<div class="card-deck mt-4 mb-4 text-center">
 			<div class="card mb-4 shadow-sm">
 					<button type="button"  class="btn btn-block btn-outline-primary"
-						onClick="alert('장바구니에 추가되었습니다.'); cartLS.add({id: 2_53, name: '(메가커피) 라임모히또', price: 3800})">장바구니 추가</button>
+						onClick="alert('장바구니에 추가되었습니다.'); cartLS.add({id: 3_53, name: '(이디야) 블루베리 베이글', price: 1900})">장바구니 추가</button>
 				</div>
 			</div>
 		</div>
@@ -66,13 +67,3 @@
 	<div class="bottom_menu">
 		<div id="navimg">
 			<img src="../../img/OnShop.png" alt="매장" onclick="location.href='../../index.html';">
-		</div>
-		<div id="navimg">
-			<img src="../../img/Cart.png" alt="장바구니" onclick="location.href='../../shop_cart.html';">
-		</div>
-	</div>
-
-    <script src="../../dist/cart-localstorage.min.js"></script>
-</body>
-
-</html>

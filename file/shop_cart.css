@@ -5,10 +5,17 @@
     top: 0;
     position: fixed; 
     width: 100%;
-    height: 100px; 
-    z-index:2; 
+    height: 10%; 
+    z-index:100; 
     background-color: white;
-    border-bottom: 3px solid gray;
+}
+
+.logo > img 
+{ 
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 150px;
 }
 body
 {
@@ -17,20 +24,15 @@ body
     padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #F5F5F5;
+    font-weight: 700;
 }
-.logo > img 
-{ 
-    text-align: center; 
-    display: block;
-    margin: auto;
-    width: 200px;
-    z-index:2; 
-}
+
 .back
 {
     margin-left: 20px;
     margin-top: 60px;
 }
+
 
 
 .bottom_menu { 
@@ -68,7 +70,7 @@ td{
 
  
 table{
-    margin-top: 40px;
+    margin-top: 100px;
     width: 100%;
     margin-bottom: 50px;
     clear: left;
@@ -130,3 +132,9 @@ button > p
     margin-left: 5vw;
 }
 
+hr
+{
+    background-color: #297E0B;
+    border: none;
+    height: 1px;
+}
