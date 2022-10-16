@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../file/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+	<div class="back"><a onclick="history.go(-1)"><img src="../../img/back.png" alt="뒤로가기 링크"></a></div>
+    <div class="menu">
+        <p>레몬에이드</p>
+        <!--<p>(아이스)</p>-->
+        <br>
+        <p>3,500 ￦(원)</p>
+    </div>
+
+	
+    
+    
+
+    <script>
+		function renderCart(items) {
+			const $cart = document.querySelector(".cart")
+			const $total = document.querySelector(".total")
+			
+			$cart.innerHTML = items.map((item) => `
+					<tr>
+						<td>#${item.id}</td>
+						<td>${item.name}</td>
+						<td>${item.quantity}</td>
+						<td style="width: 60px;">	
+							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
+								onClick="cartLS.quantity(${item.id},1)">+</button>
+						</td>
+						<td style="width: 60px;">	
+							<button type="button" class="btn btn-block btn-sm btn-outline-primary"
+								onClick="cartLS.quantity(${item.id},-1)">-</button>
+						</td>
+						<td class="text-right">$${item.price}</td>
+						<td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button></td>
+					</tr>`).join("")
+
+			$total.innerHTML = "$" + cartLS.total()
+		}
+		renderCart(cartLS.list())
+		cartLS.onChange(renderCart)
+	</script>
+    <div class="container">
+
+		<div class="card-deck mt-4 mb-4 text-center">
+			<div class="card mb-4 shadow-sm">
+					<button type="button"  class="btn btn-block btn-outline-primary"
+						onClick="alert('장바구니에 추가되었습니다.'); cartLS.add({id: 2_44, name: '(메가커피) 레몬에이드', price: 3500})">장바구니 추가</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+	</div>
+	<div class="bottom_menu">
+		<div id="navimg">
+			<img src="../../img/OnShop.png" alt="매장" onclick="location.href='../../index.html';">
+		</div>
+		<div id="navimg">
+			<img src="../../img/Cart.png" alt="장바구니" onclick="location.href='../../shop_cart.html';">
+		</div>
+	</div>
+
+    <script src="../../dist/cart-localstorage.min.js"></script>
+</body>
+
+</html>
