@@ -8,12 +8,13 @@
     height: 10%; 
     z-index:100; 
     background-color: white;
+    padding-bottom: 20px;
 }
 
 .logo > img 
 { 
     margin: auto;
-    margin-top: 30px;
+    margin-top: 45px;
     margin-left: 20px;
     width: 150px;
 }
