@@ -29,7 +29,7 @@ body{
     top: 0;
     position: fixed; 
     width: 100%;
-    height: 10%; 
+    padding-bottom: 30px; 
     z-index:100; 
     background-color: white;
 }
@@ -82,7 +82,7 @@ body{
 .line_start
 {
     padding-bottom: 120px;
-    
+    padding-top: 1vmax;   
 }
 
 .menu_start_line
