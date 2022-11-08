@@ -7,38 +7,34 @@
 	<link rel="stylesheet" href="../../file/index.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>홍시빙수</title>
 
 </head>
 
 <body>
-	<div class="back"><a onclick="history.go(-1)"><img src="../../img/back.png" alt="뒤로가기 링크"  ></a></div>
+	<div class="back"><a onclick="history.go(-1)" href="../osr_brunch.html"><img src="../../img/back.png" alt="뒤로가기 링크" ></a></div>
+	
 	<div class="menu">
-		<p>말차 라떼</p>
+		<p>멍푸치노</p>
 		<!--<p>(아이스)</p>-->
 		<br>
-		<p>4,500 ￦(원)</p>
+		<p>2,000 ￦(원)</p>
 	</div>
+
+	<div class="script">
+		<p> 
+			강아지 우유와 캐롭파우더를 넣어 만든 
+			<br>강아지 커피 입니다.
+		</p>
+	</div>
+
 	<div class="wish">
 		<p>메뉴 찜하기</p>
 	</div>
-
-
-
-
-
-	<div class="container">
-
-		<div class="card-deck mt-4 mb-4 text-center">
-			<div class="card mb-4 shadow-sm">
-				<button type="button" class="btn btn-block btn-outline-primary"
-					onClick="alert('장바구니에 추가되었습니다.'); cartLS.add({id: 1_5, name: '(오성리) 말차 라떼', price: 4500})">장바구니 추가</button>
-			</div>
-		</div>
-	</div>
-	</div>
-
 	<script>
+
+		
+
 		function renderCart(items) {
 			const $cart = document.querySelector(".cart")
 			const $total = document.querySelector(".total")
@@ -65,6 +61,17 @@
 		renderCart(cartLS.list())
 		cartLS.onChange(renderCart)
 	</script>
+	<div class="container">
+
+		<div class="card-deck mt-4 mb-4 text-center">
+			<div class="card mb-4 shadow-sm">
+				<button type="button" class="btn btn-block btn-outline-primary"
+					onClick="alert('장바구니에 추가되었습니다.'); cartLS.add({id: 1_73, name: '(오성리) 멍푸치노', price: 2000})">장바구니
+					추가</button>
+			</div>
+		</div>
+	</div>
+	</div>
 	<div class="nav">
 	</div>
 	<div class="bottom_menu">
@@ -76,8 +83,8 @@
 		</div>
  
 	</div>
-	<script src="../../dist/cart-localstorage.min.js"></script>
 
+	<script src="../../dist/cart-localstorage.min.js"></script>
 </body>
 
 </html>
