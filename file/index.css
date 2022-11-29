@@ -226,15 +226,24 @@ body{
     display: flex;
 }
 
-#cate_name
-{
-    color: #297E0B;
-}
-
-#cate_name_N
+#cate_name_R
 {
     color: red;
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 30px;
+    display: flex;
 }
+
+#cate_name_B
+{
+    color: rgb(78, 78, 255);
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 30px;
+    display: flex;
+}
+
 
 
 
