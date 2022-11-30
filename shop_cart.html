@@ -16,7 +16,6 @@
         <img src="./img/logo.png" alt="메뉴닷">
     </div>
 
-	
 
     <ins class="kakao_ad_area" style="display: none; margin-top: 90px;"
     data-ad-unit = "DAN-xTGO5Jo7b348Ai4E"
@@ -34,9 +33,9 @@
 					
 				<tbody class="cart">
 					</tbody>
-					
+					<!--
 					<td><strong class="all">합계금액 :</strong> <strong class="total"></strong></td>
-					
+					-->
 				</table>
 			</div>
 		</div>
@@ -48,10 +47,9 @@
 		function renderCart(items) {
 			const $cart = document.querySelector(".cart")
 			const $total = document.querySelector(".total")
-
 			$cart.innerHTML = items.map((item) => `
 					<tr>
-						<td><p id="tab"></p>${item.name} <b style="color:gray; font-size:12px; margin-left:10px;">${item.price}원</b></td>
+						<td><p id="tab"></p>${item.name} <b style="color:gray; font-size:12px; margin-left:10px;" >${item.price - 1}원</b></td>
 						<td  class="text-right">
 							<Button class="btn btn-primary" onClick="alert('장바구니에서 삭제되었습니다.');cartLS.remove(${item.id})"><img src="./img/del.png" alt="빼기" width="20x" style="margin-bottom:10px;" ></Button>
 							<p id="tab_r"></p>
@@ -63,7 +61,7 @@
 						<br>
 						
 						<td>
-							<p id="tab"></p> ${item.quantity * item.price} 원
+							<p id="tab"></p> ${item.quantity * (item.price - 1)} 원
 							</td>
 						
 						<td class="text-right"> 	
@@ -89,12 +87,17 @@
 					<tr><td colspan="3"><br><hr class="sort"><br><td></tr>
 					`
 					).join("")
-				
+
 			$total.innerHTML = cartLS.total() + "원"
 		}
 		renderCart(cartLS.list())
 		cartLS.onChange(renderCart)
+
 	</script>
+
+
+
+
 
 <script type="text/javascript" th:inline="javascript">
 	window.addEventListener('load', (event) => {
